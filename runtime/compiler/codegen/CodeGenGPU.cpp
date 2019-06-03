@@ -651,6 +651,7 @@ static const char * nvvmOpCodeNames[] =
    NULL,          // TR::checkcast
    NULL,          // TR::checkcastAndNULLCHK
    NULL,          // TR::New
+   NULL,          //TR::newvalue
    "INVALID",       // TR::newarray
    NULL,          // TR::anewarray
    NULL,          // TR::variableNew
