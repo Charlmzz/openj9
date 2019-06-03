@@ -61,6 +61,7 @@ extern "C" {
 
 #if JAVA_SPEC_VERSION >= 11
 #define J9VM_OPT_VALHALLA_NESTMATES
+#define J9VM_OPT_VALHALLA_VALUE_TYPES
 #endif
 
 #ifdef __cplusplus
