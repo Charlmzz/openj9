@@ -38,6 +38,7 @@ namespace J9 { typedef J9::ClassEnv ClassEnvConnector; }
 #include "j9.h"
 
 namespace TR { class SymbolReference; }
+namespace TR { class TypeLayout; }
 
 namespace J9
 {
@@ -84,6 +85,7 @@ public:
    bool isString(TR::Compilation *comp, uintptrj_t objectPointer);
    bool jitStaticsAreSame(TR::Compilation *comp, TR_ResolvedMethod * method1, int32_t cpIndex1, TR_ResolvedMethod * method2, int32_t cpIndex2);
    bool jitFieldsAreSame(TR::Compilation *comp, TR_ResolvedMethod * method1, int32_t cpIndex1, TR_ResolvedMethod * method2, int32_t cpIndex2, int32_t isStatic);
+   bool enumerateFields(TR::TypeLayout& layout, TR_OpaqueClassBlock * clazz, TR::Compilation *comp);
 
    uintptrj_t getArrayElementWidthInBytes(TR::Compilation *comp, TR_OpaqueClassBlock* arrayClass);
 
