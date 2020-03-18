@@ -26,7 +26,7 @@
 		<testCaseName>ValueTypeTests</testCaseName>
 		<variations>
 			<variation>NoOptions</variation>
-			<variation>-Xgcpolicy:nogc -XX:ValueTypeFlatteningThreshold=99999</variation>
+			<variation>-Xgcpolicy:nogc -XX:ValueTypeFlatteningThreshold=99999 -Xjit:count=0</variation>
 		</variations>
 		<command>$(JAVA_COMMAND) $(JVM_OPTIONS) \
 		-Xverify:none \
